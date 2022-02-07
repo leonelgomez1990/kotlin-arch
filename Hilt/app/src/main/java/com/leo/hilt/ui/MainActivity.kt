@@ -1,7 +1,8 @@
-package com.leo.hilt
+package com.leo.hilt.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.leo.hilt.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
