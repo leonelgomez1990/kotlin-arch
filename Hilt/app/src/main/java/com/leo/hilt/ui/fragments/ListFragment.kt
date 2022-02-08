@@ -28,5 +28,19 @@ class ListFragment : Fragment() {
         return binding.root
     }
 
+    override fun onStart() {
+        super.onStart()
+        setObservers()
+        binding.btnGetInformation.setOnClickListener {
+            viewModel.getInformation()
+        }
+    }
+
+    private fun setObservers() {
+        viewModel.txtInformation.observe(this) {
+            binding.txtShowInformation.text = viewModel.txtInformation.value
+        }
+    }
+
 
 }
