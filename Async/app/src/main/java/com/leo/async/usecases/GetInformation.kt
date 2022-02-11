@@ -5,5 +5,5 @@ import com.leo.async.data.InformationRepository
 class GetInformation (
     val informationRepository: InformationRepository
         ) {
-    operator fun invoke() = informationRepository.getInformation()
+    suspend operator fun invoke() = informationRepository.getInformation()
 }

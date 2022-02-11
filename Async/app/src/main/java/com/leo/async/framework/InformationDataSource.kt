@@ -1,5 +1,5 @@
 package com.leo.async.framework
 
 interface InformationDataSource {
-    fun getData() : String
+    suspend fun getData() : String
 }
